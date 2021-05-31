@@ -1,0 +1,10 @@
+Ideas going forward 
+-----------------
+
+get an SSH connection from the MAC to my Laptop --> might need to boot off of usb if I cant boot off of the SDIO 
+	- from this can setup a simple python script for controlling the motors
+		Controlling motors: Maybe using the PATA ports connected to the current drivers can write some kind of wrapper class to control the motors?? 
+		Maybe look into controlling through usb ports or something? both sound kinda painful because we dont have a direct parrallel port i think 
+
+
+Directly control motors with an arduino and move onto more mechanically oriented direction

@@ -14,6 +14,8 @@ Pioneer Front
 Pioneer Back 
 <img src = "./assets/pione.jpg">
 </center>
+
+<h3> Attempts to get Code execution/Control of motors through the board</h3>
 Both boards use a <a href="http://wfcache.advantech.com/www/embcore/pdf/SQFlash/Parallel%20ATA%20Interface%20Reference%20Design%20Guide_V0%201.pdf">PATA/IDE</a> interface to the motherboard of the iMac this is what the massive 40-pin connector is to each board. They both also recieve 12v(yellow wire) and 5v(red wire) directly from the power supply.
 
 After extensive searching, finding specific datasheets for the boards themselves or even the individual MPUs proved unfruitful.
@@ -34,7 +36,7 @@ Not really sure what to do with exposed i2c pads, connecting it to a Teensy 3.5 
 
 The Hitachi board has exposed test pads which is much more promising... no datasheets could be found,however, which makes it difficult to find which pins are for which pads. It does not appear to have the same layout as other common 14 pin JTAG configurations as the ground pad does not match. With a JTAG Debugger/scanner interface this could be a more fruitful avenue to get code execution on the board.
 
-
+<h4> To be continued</h4>
 The other obvious potential vector for attacking the boards is throught the PATA ports, looking at the pinout this may be difficult as they do not appear to connect to any programmable communication busses for the MPU. 
 
 Finally, the other route is to directly dump and reflash the flash chip on the board- on the hitachi it is very obvious the labelled one is the flash memory. This risks bricking the device and rendering it unusable, but if there is no security measures in place then simply connecting a memory programmer to this could work. 

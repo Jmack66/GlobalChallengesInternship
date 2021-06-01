@@ -1,4 +1,4 @@
-<head> Notes on Hardware Hacking the DVD drive (Pioneer DVR-105PF) and Hard Drive (Hitachi) Both from an iMac g4 (2003)</head> 
+<h1> Notes on Hardware Hacking the DVD drive (Pioneer DVR-105PF) and Hard Drive (Hitachi) Both from an iMac g4 (2003)</h1> 
 
 <h2>Hitachi Hard drive Pictures</h2>
 <center>

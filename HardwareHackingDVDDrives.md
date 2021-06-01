@@ -28,7 +28,7 @@ Here are some of the links:
 Looking at the underside of the Pioneer board the immediate stand out is the i2c pads that are exposed. It seems like they are connected to the main mpu (on the front side of the board) via traces. Looking up the chip it might be an analog to digital converter -- No data sheets for this one could be found, but similar chips that share the M30XXXXX tag were labelled as analog to digital converters. Likely meaning that the other chip on the back here is some kind of decoder for the DVD input (if that process is not done by the main MPU on the front). Connecting a logic analyzer to the i2c ports the 'ACK' flag response from the peripheral device. It's a strange test pad for the i2c between these two is open seeing as there arent any other obvious test pads on the entire board...
 
 The logic analyzer output looks like this: 
-<img src = "./assets/Logic.png">
+<img src = "./assets/Logic.PNG">
 
 Not really sure what to do with exposed i2c pads, connecting it to a Teensy 3.5 and writing some bytes ('0' and then looped through random characters) to the line didnt really result in anything (hoping to get some of the motors to move). 
 

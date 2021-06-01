@@ -1,6 +1,6 @@
 <head> Notes on Hardware Hacking the DVD drive (Pioneer DVR-105PF) and Hard Drive (Hitachi) Both from an iMac g4 (2003)</head> 
 
-<h1>Hitachi Hard drive Pictures</h1>
+<h2>Hitachi Hard drive Pictures</h2>
 <center>
 Hitachi Front
 <img src = "./assets/hitachi.jpg">
@@ -36,7 +36,7 @@ Not really sure what to do with exposed i2c pads, connecting it to a Teensy 3.5 
 
 The Hitachi board has exposed test pads which is much more promising... no datasheets could be found,however, which makes it difficult to find which pins are for which pads. It does not appear to have the same layout as other common 14 pin JTAG configurations as the ground pad does not match. With a JTAG Debugger/scanner interface this could be a more fruitful avenue to get code execution on the board.
 
-<h4> To be continued</h4>
+<h3> To be continued</h3>
 The other obvious potential vector for attacking the boards is throught the PATA ports, looking at the pinout this may be difficult as they do not appear to connect to any programmable communication busses for the MPU. 
 
 Finally, the other route is to directly dump and reflash the flash chip on the board- on the hitachi it is very obvious the labelled one is the flash memory. This risks bricking the device and rendering it unusable, but if there is no security measures in place then simply connecting a memory programmer to this could work. 

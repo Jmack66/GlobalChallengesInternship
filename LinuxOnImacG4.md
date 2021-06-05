@@ -31,7 +31,7 @@ Linux should now be working and it runs reasonably well on the G4.
 
 Included in the scripts folder of the repo is a <h3>wifiSetup.sh</h3> file that contains the commands that were succesful on the tested machine to connect to a local network. <b>MAKE SURE TO ENTER YOUR SSID AND PASSWD INTO THE SCRIPT AS WELL AS CHANGING WLAN0 IF NECESSARY</b>. 
 if the script fails try running it command by command, first checking that the ssid is picked up by the wifi device with
-<h3>sudo iwlist wlan0 scan \| grep YOURSSID</h3>
+<h3>sudo iwlist wlan0 scan | grep YOURSSID</h3>
 
 <a href="https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant">This article was very helpful</a>
 

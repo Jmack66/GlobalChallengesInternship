@@ -29,4 +29,18 @@ Linux should now be working and it runs reasonably well on the G4.
 
 <h1>Step 2: WiFi</h1>
 
-Included in the scripts folder of the repo is a wifiSetup.sh file that contains the commands that were succesful on the tested machine to get it to connect to a local network. 
+Included in the scripts folder of the repo is a <h3>wifiSetup.sh</h3> file that contains the commands that were succesful on the tested machine to connect to a local network. <b>MAKE SURE TO ENTER YOUR SSID AND PASSWD INTO THE SCRIPT AS WELL AS CHANGING WLAN0 IF NECESSARY</b>. 
+if the script fails try running it command by command, first checking that the ssid is picked up by the wifi device with
+<h3>sudo iwlist wlan0 scan \| grep YOURSSID</h3>
+
+<a href="https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant">This article was very helpful</a>
+
+From here the tested device was able to access the internet and download python modules. 
+
+The goal was to set it up to enable ssh-ing into the device so that it could run headless without a monitor, but unfortunately because ubuntu stopped supporting the powerpc architecture the apt-get install for openssh-server 404s and does not result in any useful results.
+Attempted fixes include running wget for http://mirror.csclub.uwaterloo.ca/ubuntu-ports/dists/xenial-backports/main/binary-powerpc/Packages.gz and then running extracting. 
+The same was tried with launchpad librarians .deb files of the openssh server package but neither enabled the ssh service to start. 
+
+For now the device has all the functionality to work headlessly via usb. 
+
+Writing shell scripts like the wifiSetup shell script or c++ or py files is possible they can be loaded onto the usb and then executed via editing the rc.local file and then plugged into the device and it can be booted automatically executing the desired script. This should be satisfactory for now. 

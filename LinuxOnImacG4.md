@@ -2,15 +2,17 @@
 
 This would likely work for most iMacs of the early 2000s era
 
+<b>the main steps will are as headers for easy and quick access and less talking</b>
+
 <h2> Step 1: Getting Linux to boot </h2>
 <h3> Lubuntu and USB</h3>
-This proved to be more difficult than anticipated. A PowerPC architecture compliant version of Linux (Lubuntu) was found <a href="https://forums.macrumors.com/threads/lubuntu-16-04-remix-updated.2204742/">here</a>. Downloading this from the forum posts linked google drive, a suitable 8 Gb usb was found and formatted using Rufus (https://rufus.ie/en_US/). Once this USB was ready to go it was plugged into the iMac. 
+This proved to be more difficult than anticipated. A PowerPC architecture compliant version of Linux (Lubuntu) was found <h3><a href="https://forums.macrumors.com/threads/lubuntu-16-04-remix-updated.2204742/">here</a></h3>. Downloading this from the forum posts linked google drive, a suitable 8 Gb usb was found and formatted using <h3>Rufus (https://rufus.ie/en_US/)</h3>. Once this USB was ready to go it was plugged into the iMac. 
 
 \* the reason a USB boot is needed is because the harddrive and CD drive had been removed and used for parts (see HardWare hacking post for context)
 
 From here there are a few potential paths forward. Booting the device and pressing and holding the option key should bring up the "boot picker" which will allow you to select the drive you boot from... This never worked on the tested machine it would get stuck on the boot picker screen and not accept any input. But results may vary depending on the rig.
 
-Next option is to boot the device with Open Firmware mode. this involves presing command option O F on startup. It should bring up a termional and say open firmware mode. More info on open firmware here (http://www.firmworks.com/QuickRef.html)
+Next option is to boot the device with Open Firmware mode. this involves presing <h2>command option O F on startup</h2>. It should bring up a termional and say open firmware mode. More info on open firmware here (http://www.firmworks.com/QuickRef.html)
 
 Once here, the usb port that the newly formatted usb drive is plugged into must be found. (commands in bold are written <i>exactly</i> as they need to be typed)
 

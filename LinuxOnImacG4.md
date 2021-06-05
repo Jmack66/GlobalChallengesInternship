@@ -14,14 +14,14 @@ Next option is to boot the device with Open Firmware mode. this involves presing
 
 Once here, the usb port that the newly formatted usb drive is plugged into must be found. (commands in bold are written <i>exactly</i> as they need to be typed)
 
-running <b>dev / ls </b> lists all devices that are connected (should see things like the wifi card any ROM connected and so on) in this case the USB devices are desired. The formatted device should have some disk@1 or disk@2 as a directory inside. This should be the desired drive. Alternatively if the exact port the usb was plugged into is known or can be easily found then this could be used. 
+running <h2><b>dev / ls </b></h2> lists all devices that are connected (should see things like the wifi card any ROM connected and so on) in this case the USB devices are desired. The formatted device should have some disk@1 or disk@2 as a directory inside. This should be the desired drive. Alternatively if the exact port the usb was plugged into is known or can be easily found then this could be used. 
 
-The desired drive will be listed as something like usb@18 or similar this is the internal naming to find the naming needed to boot from it the command <b>devalias</b> can be used and the names matched.
+The desired drive will be listed as something like usb@18 or similar this is the internal naming to find the naming needed to boot from it the command <h2><b>devalias</b></h2> can be used and the names matched.
 
-now we want to set this to be the boot for every time the device startsup. to do this the command <b>setenv boot-device usb0/disk@2:,\\\\yaboot</b> obviously replacing the usb and disk name to match 
+now we want to set this to be the boot for every time the device startsup. to do this the command <h2><b>setenv boot-device usb0/disk@2:,\\\\yaboot</b></h2> obviously replacing the usb and disk name to match 
 
 
-then <b>boot usb0/disk@2:,\\\\yaboot</b> can be run to boot into linux. It will take a minute or so to boot and might ask for a keystroke to start.
+then <h2><b>boot usb0/disk@2:,\\\\yaboot</b></h2> can be run to boot into linux. It will take a minute or so to boot and might ask for a keystroke to start.
 
 Linux should now be working and it runs reasonably well on the G4. 
 

@@ -19,7 +19,7 @@ C code to cycle through the outputs of the pata (now parallel port) data pins an
 
 LEDs were connected to the PATA port to test the system/ a logic analyzer was also connected to check trigger recording of the data (not pictured)
 
-<img src = "./assets/LED.png">
+<img src = "./assets/LED.PNG">
 <img src = "./assets/bread.jpg">
 
 Note the LEDs should have resistors before them but since the current the port can supply is low and they would not be on for long it was not worth it. 

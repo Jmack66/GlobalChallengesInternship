@@ -24,6 +24,8 @@ LEDs were connected to the PATA port to test the system/ a logic analyzer was al
 
 Note the LEDs should have resistors before them but since the current the port can supply is low and they would not be on for long it was not worth it. 
 
+Something interesting to note is the LEDS flash in a sequence on start up -- presumably during boot the kernel checks for devices and this read request gets picked up by the LEDS. 
+
 Unfortunately this remains untested on the device... the <i>outb</i> function from the sys/io.h library is not available on powerpc linux architectures... In fact none of sys/io.h is, according to some forums this is because mac's do not allow direct hardware manipulation through io unless it is done at the kernel level. So one potential solution would be to write a kernel extension. 
 
 Adding the outb function directly from the documentation for io was attempted but the gcc compiler was not happy with the inline assembly, and was not happy with the adresses that were being requested. 

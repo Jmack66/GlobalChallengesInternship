@@ -33,7 +33,7 @@ https://www.howtoforge.com/tutorial/accessing-parallel-ports-on-linux/
 
 http://www2.cs.siu.edu/~cs491-2/projects/anan2.pdf
 
-<h3> Other useful resources</h3>
+<h3> Other useful resources:</h3>
 
 https://www.opensourceforu.com/2015/06/using-parallel-ports-to-control-devices/
 

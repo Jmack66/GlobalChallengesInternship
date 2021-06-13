@@ -5,3 +5,5 @@
 </h2>
 <h2>
 <a href=https://github.com/Jmack66/GlobalChallengesInternship/blob/main/LinuxOnImacG4.md>Linux USB boot on an iMac G4</a>
+<h2>
+<a href=https://github.com/Jmack66/GlobalChallengesInternship/blob/main/ATA-IDE-As-GPIO.md>ATA/PATA/IDE as Parallel Port/GPIO</a>

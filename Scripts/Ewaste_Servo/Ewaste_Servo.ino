@@ -7,7 +7,7 @@ Serial.begin(115200);
 servo.setLims(1,420);
 }
 
-
+//Simple Example that uses W and S keys to move the servo up and down
 void loop() {
   int val = 0;
   int spos = 200;

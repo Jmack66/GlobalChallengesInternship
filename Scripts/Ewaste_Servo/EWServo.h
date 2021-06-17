@@ -1,5 +1,5 @@
 #include <Wire.h>
-
+//for now wire is included to use serial print for debug-- this can be removed so there is no library dependencies other than the arduino ones 
 class EWServo{
   public:
     EWServo(const int in1, const int in2, const int out);
